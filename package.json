@@ -11,6 +11,7 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "author": "Valerio Pisapia<pisa.vale@gmail.com>",
   "dependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",

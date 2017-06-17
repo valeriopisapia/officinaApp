@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule, Routes} from '@angular/router';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import { NguiMapModule} from '@ngui/map';
 
@@ -43,7 +44,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyB_qdz8vD8SylSUA2Xd-RhGeDlt21mOMZU'})
   ],
-  providers: [ApiService],
+  providers: [ApiService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

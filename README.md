@@ -1,6 +1,6 @@
 # OfficinaApp
 
-##Getting Started
+## Getting Started
 Run `npm install` (in order to install all dependencies that the app need for)
 
 ## Development server
