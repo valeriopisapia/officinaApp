@@ -1,0 +1,19 @@
+album-result {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: transparent; }
+
+.card-result {
+  float: left;
+  width: 100%;
+  padding: .35rem;
+  margin-bottom: 1rem;
+  border: 0; }
+
+.card-result > img {
+  margin-bottom: .75rem; }
+
+.card-text {
+  font-size: 85%; }
+
+/*# sourceMappingURL=result.component.css.map */

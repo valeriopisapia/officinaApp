@@ -1,0 +1,29 @@
+<div class="album text-muted">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12 text-center">
+        <h3>IN EVIDENZA</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" *ngFor="let item of garages">
+        <img src="{{ item.photo }}" alt="100%x200" style="height: 200px; width: 100%; display: block;" data-holder-rendered="true">
+        <div class="row">
+          <div class="col-12">
+            <h6>{{ item.title }}</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <span class="label_1">{{ item.reviews.length }} recensioni</span>
+          </div>
+          <div class="col-6 text-right">
+            <app-rating [value]="item.averageReview"></app-rating>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

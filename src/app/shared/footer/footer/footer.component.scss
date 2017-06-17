@@ -1,0 +1,21 @@
+@import "../../../../assets/bootstrap/variables.scss";
+
+footer {
+  background-color: $gray-lighter;
+  font-size: 0.8em;
+  color: $dark-blue;
+  height: 240px;
+}
+
+h6, h4 {
+  color: #454545;
+}
+
+h6 {
+  font-size: 0.7rem;
+}
+
+.bg-footer-row {
+  background-color: #373737;
+  height: 20px;
+}

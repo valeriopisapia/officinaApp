@@ -1,0 +1,96 @@
+{
+  "garages": [
+    {
+      "title": "Officina 1",
+      "photo": "./assets/images/photo.png",
+      "reviews": [
+        {
+          "author": "Franco",
+          "description": "Ottimo Lavoro",
+          "value": "5",
+          "date_publish": ""
+        },
+        {
+          "author": "Luigi",
+          "description": "Super Officina",
+          "value": "4",
+          "date_publish": ""
+        }
+      ],
+      "position": 1,
+      "coords": ["40.8492159", "14.2692828"],
+      "created": "",
+      "updated": "",
+      "id": 1
+    },
+    {
+      "title": "Officina 2",
+      "photo": "./assets/images/photo.png",
+      "reviews": [
+        {
+          "author": "Franco",
+          "description": "Ottimo Lavoro",
+          "value": "5",
+          "date_publish": ""
+        },
+        {
+          "author": "Luigi",
+          "description": "Super Officina",
+          "value": "5",
+          "date_publish": ""
+        }
+      ],
+      "position": 2,
+      "coords": ["40.8510283", "14.2730756"],
+      "created": "",
+      "updated": "",
+      "id": 2
+    },
+    {
+      "title": "Officina 3",
+      "photo": "./assets/images/photo.png",
+      "reviews": [
+        {
+          "author": "Franco",
+          "description": "Ottimo Lavoro",
+          "value": "5",
+          "date_publish": ""
+        },
+        {
+          "author": "Luigi",
+          "description": "Super Officina",
+          "value": "5",
+          "date_publish": ""
+        }
+      ],
+      "position": 3,
+      "coords": ["40.846655", "14.2732608"],
+      "created": "",
+      "updated": "",
+      "id": 3
+    },
+    {
+      "title": "Officina 4",
+      "photo": "./assets/images/photo.png",
+      "reviews": [
+        {
+          "author": "Franco",
+          "description": "Ottimo Lavoro",
+          "value": "5",
+          "date_publish": ""
+        },
+        {
+          "author": "Luigi",
+          "description": "Super Officina",
+          "value": "5",
+          "date_publish": ""
+        }
+      ],
+      "position": 4,
+      "coords": ["40.8475361", "14.2613791"],
+      "created": "",
+      "updated": "",
+      "id": 4
+    }
+  ]
+}

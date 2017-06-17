@@ -1,0 +1,68 @@
+<app-search (onChangeSearch)="onChangeSearch($event)"></app-search>
+<div class="row">
+  <div class="col-8">
+    <div class="album-result text-muted">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 text-center">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <span class="label_red">{{ numberEl }}</span> <span class="label_2_small">risultati su Napoli</span>
+          </div>
+          <div class="col-6">
+            <span class="label_2_small">Ordina per: ...</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-result" *ngFor="let item of garages | customNameFilter: 'title' : searchTitle : garages">
+            <div class="row">
+              <div class="col-5">
+                <img src="{{ item.photo }}" class="img-fluid" alt="Responsive image">
+              </div>
+              <div class="col-7">
+                <div class="col-12">
+                  <h6>{{ item.title }}</h6>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-3"><span class="label_1">{{ item.reviews.length }} recensioni</span></div>
+                    <div class="col-5 text-left">
+                      <app-rating [value]="item.averageReview"></app-rating>
+                    </div>
+                    <div class="col-4"><span class="label_1">n. {{ item.position }} di {{ garages.length }} a Napoli</span></div>
+                  </div>
+                </div>
+                <div class="col-12" style="margin-top: 5px; margin-bottom: 5px;">
+                  <div class="row">
+                    <div class="col-12" *ngFor="let review of item.reviews">
+                      <span class="label_1"><i>"{{ review.description }}"</i> - {{ review.author }}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <ul class="navbar-nav">
+                    <li><img src="./assets/images/invoice.png" style="height: 10px;"> <span class="label_2"><strong>Richiedi preventivo</strong></span></li>
+                    <li><img src="./assets/images/calendar.png" style="height: 10px;"> <span class="label_2"><strong>Fissa un appuntamento</strong></span></li>
+                    <li><img src="./assets/images/request.png" style="height: 10px;"> <span class="label_2"><strong>Richiedi intervento a domicilio</strong></span></li>
+                  </ul>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="col-4">
+    <ngui-map center="Naples, Italy">
+      <marker *ngFor="let item of garages"
+              (click)="showInfoWindow($event)"
+              [position]="item.coords"></marker>
+    </ngui-map>
+  </div>
+</div>

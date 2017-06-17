@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,MAAO;EACL,gBAAgB,ECoBW,OAAO;EDnBlC,SAAS,EAAE,KAAK;EAChB,KAAK,ECDM,IAAI;EDEf,MAAM,EAAE,KAAK;;AAGf,MAAO;EACL,KAAK,EAAE,OAAO;;AAGhB,EAAG;EACD,SAAS,EAAE,MAAM;;AAGnB,cAAe;EACb,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,IAAI",
+"sources": ["footer.component.scss","../../../../assets/bootstrap/_variables.scss"],
+"names": [],
+"file": "footer.component.css"
+}

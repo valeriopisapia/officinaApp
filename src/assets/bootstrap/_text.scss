@@ -1,0 +1,22 @@
+h5 {
+  color: $blue;
+}
+
+.label_1 {
+  font-size: x-small;
+}
+
+.label_2 {
+  font-size: x-small;
+  color: #081551;
+}
+
+.label_2_small {
+  @extend .label_2;
+  font-size: small;
+}
+
+.label_red {
+  @extend .label_2_small;
+  color: red;
+}
